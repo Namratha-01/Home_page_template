@@ -1,43 +1,53 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-html{
+html {
     scroll-behavior: smooth;
-  }
+}
 
-  body {
+body {
     background: rgb(255, 255, 255);
     color: #444;
     font-family: 'Newsreader', serif;
     font-weight: 900;
-  }
+}
 
-  a {
+a {
     color: #1bb1dc;
     transition: 0.5s;
-  }
+}
 
-  p {
+p {
     padding: 0;
     margin: 0 0 30px 0;
-  }
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Newsreader', serif;
     font-weight: 900;
     margin: 0 0 20px 0;
     padding: 0;
-  }
-  /*--------------------------------------------------------------
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+
+#topbar {
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+}
+
+/*--------------------------------------------------------------
     # Header
     --------------------------------------------------------------*/
 
-  #header {
+#header {
     height: 110px;
     transition: all 0.5s;
     z-index: 997;
@@ -46,56 +56,57 @@ html{
     left: 0;
     top: 0;
     right: 0;
-  }
+}
 
-  #header .logo{
+#header .logo {
     position: fixed;
     top: 0;
-  }
+}
 
-  #header .logo img {
+#header .logo img {
     padding: 0;
     max-height: 130px;
     margin-top: 20px;
-  }
+}
 
-  .main-pages {
+.main-pages {
     margin-top: 60px;
-  }
+}
 
 
-  .header-scrolled{
-    background: rgba(255,255,255,0.8);
-    height: 80px!important;
-    box-shadow: 2px 0 10px 2px rgba(40,40,40,0.1);
-  }
+.header-scrolled {
+    background: rgba(255, 255, 255, 0.8);
+    height: 80px !important;
+    box-shadow: 2px 0 10px 2px rgba(40, 40, 40, 0.1);
+}
 
-  .header-scrolled #topbar{
+.header-scrolled #topbar {
     display: none;
-  }
-  .header-scrolled .logo img{
+}
+
+.header-scrolled .logo img {
     display: none;
-  }
+}
 
 
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Navigation Menu
   --------------------------------------------------------------*/
 
-  .main-nav,
-  .main-nav * {
+.main-nav,
+.main-nav * {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
+}
 
-  .main-nav>ul>li {
+.main-nav > ul > li {
     position: relative;
     float: left;
-  }
+}
 
-  .main-nav a {
+.main-nav a {
     display: block;
     position: relative;
     color: #413e66;
@@ -105,14 +116,14 @@ html{
     font-family: 'Newsreader', serif;
     text-transform: uppercase;
     font-weight: 800;
-  }
+}
 
-  .main-nav a:hover,
-  .main-nav .active>a,
-  .main-nav li:hover>a {
+.main-nav a:hover,
+.main-nav .active > a,
+.main-nav li:hover > a {
     color: #1bb1dc;
     text-decoration: none;
-  }
+}
 
 .search {
     width: 200px;
@@ -139,9 +150,10 @@ input {
     color: #fff;
     opacity: 100;
 }
+
 svg {
     color: rosybrown;
-    fill:currentcolor;
+    fill: currentcolor;
     width: 24px;
     height: 24px;
     padding: 10px;

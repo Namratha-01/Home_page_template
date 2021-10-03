@@ -41,23 +41,62 @@
             </div>
             <nav id="navigation" class="main-nav float-right d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="#top">HOME</a></li>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#bod">BOD</a></li>
-                    <li><a href="#donors">DONORS</a></li>
-                    <li><a href="#pastcampaigns">PAST CAMPAIGNS</a></li>
-                    <li><a href="#contribute">CONTRIBUTE</a></li>
-                    <li><a href="#contact">CONTACT US</a></li>
-                    <div>
-                        <li class="nav-item">
-                            <form id="form" role="search" class="search input">
-                                <input type="search" id="query" name="q" placeholder="Know more" aria-label="Search through site content"> <button>
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </button>
-                            </form>
+                    <li class="active"><a href="#top">FIND A DOC</a></li>
+                    <li><a href="#about">SHOP</a></li>
+                    <li><a href="#bod">SERVICES</a></li>
+                    <li><a href="#donors">PARTNERS</a></li>
+                    <li><a href="#pastcampaigns">CONTACT</a></li>
 
-                        </li>
-                    </div>
+                </ul>
+
+                <ul>
+                    <li class="nav-item" style="padding-right: 80px">
+                        <form id="form" role="search" class="search input">
+                            <input type="search" id="query" name="q" placeholder="Know more" aria-label="Search through site content"> <button>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                        <script>
+                            const f = document.getElementById('form');
+                            const q = document.getElementById('query');
+                            const google = 'https://www.google.com/search?q=site%3A+';
+                            const site = 'https://www.google.com';
+
+                            function submitted(event) {
+                                event.preventDefault();
+                                const url = google + site + '+' + q.value;
+                                const win = window.open(url, '_blank');
+                                win.focus();
+                            }
+
+                            f.addEventListener('submit', submitted);
+
+                        </script>
+                    </li>
+
+                    <li class="nav-item">
+                        <form id="form" role="search" class="search input">
+                            <input type="search" id="query" name="q" placeholder="location" aria-label="Search through site content"> <button>
+                                <i class="fa fa-map-marker " style="font-size:24px" aria-hidden=" true"></i>
+                            </button>
+                        </form>
+                        <script>
+                            const f = document.getElementById('form');
+                            const q = document.getElementById('query');
+                            const google = 'https://maps.google.co.in;
+                            const site = 'https://www.google.com';
+
+                            function submitted(event) {
+                                event.preventDefault();
+                                const url = google + site + '+' + q.value;
+                                const win = window.open(url, '_blank');
+                                win.focus();
+                            }
+
+                            f.addEventListener('submit', submitted);
+
+                        </script>
+                    </li>
                 </ul>
             </nav><!-- .main-nav -->
         </div>

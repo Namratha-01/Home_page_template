@@ -131,7 +131,7 @@ h6 {
     background-color: lavender;
     border: 5px;
     border-color: black;
-    border-radius: 5px;
+    border-radius: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;

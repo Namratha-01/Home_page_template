@@ -48,8 +48,8 @@
 
                 </ul>
 
-                <ul>
-                    <li class="nav-item" style="padding-right: 80px">
+                <ul style="background-color:white">
+                    <li class="nav-item" style="padding-right: 150px; padding-left:40px">
                         <form id="form" role="search" class="search input">
                             <input type="search" id="query" name="q" placeholder="Know more" aria-label="Search through site content"> <button>
                                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -82,7 +82,7 @@
                         <script>
                             const f = document.getElementById('form');
                             const q = document.getElementById('query');
-                            const google = 'https://maps.google.co.in;
+                            const google = 'https://maps.google.co.in';
                             const site = 'https://www.google.com';
 
                             function submitted(event) {
@@ -103,56 +103,101 @@
         </div>
     </header>
     <!--------------- #header ---------------->
-    <p>
-<table style="position:absolute; bottom:50px">
-  <tr>
-    <th>sort by</th>
-  </tr>
-  <tr>
-    <td><form>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-</form> </td>
+    <section style="position:absolute; top:210px; left:20px; border:1px solid black; padding-left:20px; padding-right:20px">
+      <h5>Sort by</h1>
+<label class="container1">Relevance
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container1">EarliestAivalable
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container1">Fee low-high
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container1">Years of Experience
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container1">Recommendation
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
 
-<th>
-Filter by
-</th>
-  </tr>
-  <tr>
-    <td><form>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-</form></td>
+<h5>Filter by</h1>
+<label class="container2">Male
+<input type="checkbox2">
+<span class="checkmark2"></span>
+</label>
+<label class="container2">Female
+<input type="checkbox2">
+<span class="checkmark2"></span>
+</label>
+                  
+              <div class="filter3-checkbox-header">
+                      <span class="filter3-header-title">Availability</span>
+                  <ul class="Availability-list">
+                     <li>
+                         <label class="Availability-checkbox-label">
+                             <input type="checkbox" value="Immediate">
+                             Immediate
+                         </label>
+                     </li>
+                     <li>
+                         <label class="Availability-checkbox-label">
+                             <input type="checkbox" value=" Today">
+                             Today
+                         </label>
+                     </li>
+                     <li>
+                         <label class="Availability-checkbox-label">
+                             <input type="checkbox" value=" Tomorrow">
+                             Tomorrow
+                         </label>
+                     </li>
+                     <li>
+                         <label class="Availability-checkbox-label">
+                             <input type="checkbox" value=" Next7Days">
+                             Next 7 Days
+                         </label>
+                     </li>
 
-  </tr>
-  <tr>
-    <td><form>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-</form></td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
+                  </ul>
+              </div >
+              <div class="fiter4-checkbox-header">
+                         <span class="filter4-header-title">Fee </span>
+                     <ul class="fee-list">
+                     <li>
+                         <label class="fee-checkbox-label">
+                             <input type="checkbox" value="Below250">
+                             Below 250
+                         </label>
+                     </li>
+                     <li>
+                         <label class="fee-checkbox-label">
+                             <input type="checkbox" value=" 200 - 500">
+                             200 - 500
+                         </label>
+                     </li>
+                     <li>
+                         <label class="fee-checkbox-label">
+                             <input type="checkbox" value=" 500 - 1000">
+                             500 - 1000
+                         </label>
+                     </li>
+                     <li>
+                         <label class="fee-checkbox-label">
+                             <input type="checkbox" value="Above 1000 ">
+                             Above 1000
+                         </label>
+                     </li>
 
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-  </tr>
-</table>
-</p>
+                     </ul>
+               </div>
+         </div>
+
+     </section>
 </body>
+</html>

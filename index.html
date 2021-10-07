@@ -7,197 +7,168 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cureya Tech</title>
-    <link rel="icon" href="Cureya%20HD%20LOGO.png">
+  <title>Cureya Tech</title>
+  <link rel="icon" href="Cureya%20HD%20LOGO.png">
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS File -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
-    <!--==========================
+  <!--==========================
         Header
         ============================-->
-    <header id="header">
+  <header id="header">
 
 
-        <div class="container">
-            <div class="logo float-left" style="position:absolute; left:10px">
-                <img src="Cureya%20HD%20LOGO.png" alt="Logo">
-            </div>
-            <nav id="navigation" class="main-nav float-right d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="#top">FIND A DOC</a></li>
-                    <li><a href="#about">SHOP</a></li>
-                    <li><a href="#bod">SERVICES</a></li>
-                    <li><a href="#donors">PARTNERS</a></li>
-                    <li><a href="#pastcampaigns">CONTACT</a></li>
-                    <li><button style="font-size:20px; padding-left: 20px; padding-right: 20px; background-color: lavender; color: black" href="#">Login<i class="fa fa-user" aria-hidden="true"></i></button></li>
+    <div class="container">
+      <div class="logo float-left" style="position:absolute; left:10px">
+        <img src="Cureya%20HD%20LOGO.png" alt="Logo">
+      </div>
+      <nav id="navigation" class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#top">FIND A DOC</a></li>
+          <li><a href="#about">SHOP</a></li>
+          <li><a href="#bod">SERVICES</a></li>
+          <li><a href="#donors">PARTNERS</a></li>
+          <li><a href="#pastcampaigns">CONTACT</a></li>
+          <li><button style="font-size:20px; padding-left: 20px; padding-right: 20px; background-color: lavender; color: black" href="#">Login<i class="fa fa-user" aria-hidden="true"></i></button></li>
 
-                </ul>
+        </ul>
 
-                <ul style="background-color:white">
-                    <li class="nav-item" style="padding-right: 150px; padding-left:40px">
-                        <form id="form" role="search" class="search input">
-                            <input type="search" id="query" name="q" placeholder="Know more" aria-label="Search through site content"> <button>
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                        </form>
-                        <script>
-                            const f = document.getElementById('form');
-                            const q = document.getElementById('query');
-                            const google = 'https://www.google.com/search?q=site%3A+';
-                            const site = 'https://www.google.com';
+        <ul style="background-color:white">
+          <li class="nav-item" style="padding-right: 130px; padding-left:100px">
+            <form id="form" role="search" class="search input">
+              <input type="search" id="query" name="q" placeholder="Know more" aria-label="Search through site content"> <button>
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+            <script>
+              const f = document.getElementById('form');
+              const q = document.getElementById('query');
+              const google = 'https://www.google.com/search?q=site%3A+';
+              const site = 'https://www.google.com';
 
-                            function submitted(event) {
-                                event.preventDefault();
-                                const url = google + site + '+' + q.value;
-                                const win = window.open(url, '_blank');
-                                win.focus();
-                            }
+              function submitted(event) {
+                event.preventDefault();
+                const url = google + site + '+' + q.value;
+                const win = window.open(url, '_blank');
+                win.focus();
+              }
 
-                            f.addEventListener('submit', submitted);
+              f.addEventListener('submit', submitted);
+            </script>
+          </li>
 
-                        </script>
-                    </li>
+          <li class="nav-item" style="padding-right: 80px">
+            <form id="form" role="search" class="search input">
+              <input type="search" id="query" name="q" placeholder="location" aria-label="Search through site content"> <button>
+                <i class="fa fa-map-marker " style="font-size:24px" aria-hidden=" true"></i>
+              </button>
+            </form>
+            <script>
+              const f = document.getElementById('form');
+              const q = document.getElementById('query');
+              const google = 'https://maps.google.co.in';
+              const site = 'https://www.google.com';
 
-                    <li class="nav-item" style="padding-right: 80px">
-                        <form id="form" role="search" class="search input">
-                            <input type="search" id="query" name="q" placeholder="location" aria-label="Search through site content"> <button>
-                                <i class="fa fa-map-marker " style="font-size:24px" aria-hidden=" true"></i>
-                            </button>
-                        </form>
-                        <script>
-                            const f = document.getElementById('form');
-                            const q = document.getElementById('query');
-                            const google = 'https://maps.google.co.in';
-                            const site = 'https://www.google.com';
+              function submitted(event) {
+                event.preventDefault();
+                const url = google + site + '+' + q.value;
+                const win = window.open(url, '_blank');
+                win.focus();
+              }
 
-                            function submitted(event) {
-                                event.preventDefault();
-                                const url = google + site + '+' + q.value;
-                                const win = window.open(url, '_blank');
-                                win.focus();
-                            }
+              f.addEventListener('submit', submitted);
+            </script>
+          </li>
+          <li><button style="font-size:20px; padding-left: 40px; padding-right: 40px; background-color: darkgreen; color: white" href="#">Submit</button></li>
 
-                            f.addEventListener('submit', submitted);
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--------------- #header ---------------->
+  <section style="position:absolute; top:210px; left:20px; border:1px solid black; padding-left:20px; padding-right:20px">
+    <h5>Sort by</h1>
+      <label class="container1">Relevance
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container1">EarliestAivalable
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container1">Fee low-high
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container1">Years of Experience
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container1">Recommendation
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
 
-                        </script>
-                    </li>
-                    <li><button style="font-size:20px; padding-left: 40px; padding-right: 40px; background-color: darkgreen; color: white" href="#">Submit</button></li>
+      <h5>Filter by</h1>
+        <label class="container2">Male
+          <input type="checkbox2">
+          <span class="checkmark2"></span>
+        </label>
+        <label class="container2">Female
+          <input type="checkbox2">
+          <span class="checkmark2"></span>
+        </label>
 
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!--------------- #header ---------------->
-    <section style="position:absolute; top:210px; left:20px; border:1px solid black; padding-left:20px; padding-right:20px">
-      <h5>Sort by</h1>
-<label class="container1">Relevance
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container1">EarliestAivalable
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container1">Fee low-high
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container1">Years of Experience
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container1">Recommendation
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
+        <h5>Availability</h1>
+          <label class="container1">Immediate
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container1">Today
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container1">Tomorrow
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container1">Next 7 days
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
 
-<h5>Filter by</h1>
-<label class="container2">Male
-<input type="checkbox2">
-<span class="checkmark2"></span>
-</label>
-<label class="container2">Female
-<input type="checkbox2">
-<span class="checkmark2"></span>
-</label>
-                  
-              <div class="filter3-checkbox-header">
-                      <span class="filter3-header-title">Availability</span>
-                  <ul class="Availability-list">
-                     <li>
-                         <label class="Availability-checkbox-label">
-                             <input type="checkbox" value="Immediate">
-                             Immediate
-                         </label>
-                     </li>
-                     <li>
-                         <label class="Availability-checkbox-label">
-                             <input type="checkbox" value=" Today">
-                             Today
-                         </label>
-                     </li>
-                     <li>
-                         <label class="Availability-checkbox-label">
-                             <input type="checkbox" value=" Tomorrow">
-                             Tomorrow
-                         </label>
-                     </li>
-                     <li>
-                         <label class="Availability-checkbox-label">
-                             <input type="checkbox" value=" Next7Days">
-                             Next 7 Days
-                         </label>
-                     </li>
-
-                  </ul>
-              </div >
-              <div class="fiter4-checkbox-header">
-                         <span class="filter4-header-title">Fee </span>
-                     <ul class="fee-list">
-                     <li>
-                         <label class="fee-checkbox-label">
-                             <input type="checkbox" value="Below250">
-                             Below 250
-                         </label>
-                     </li>
-                     <li>
-                         <label class="fee-checkbox-label">
-                             <input type="checkbox" value=" 200 - 500">
-                             200 - 500
-                         </label>
-                     </li>
-                     <li>
-                         <label class="fee-checkbox-label">
-                             <input type="checkbox" value=" 500 - 1000">
-                             500 - 1000
-                         </label>
-                     </li>
-                     <li>
-                         <label class="fee-checkbox-label">
-                             <input type="checkbox" value="Above 1000 ">
-                             Above 1000
-                         </label>
-                     </li>
-
-                     </ul>
-               </div>
-         </div>
-
-     </section>
+          <h5>Fee</h1>
+            <label class="container1">Below 250
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container1">250-500
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container1">500-1000
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container1">>1000
+              <input type="checkbox">
+              <span class="checkmark"></span>
+  </section>
 </body>
+
 </html>
